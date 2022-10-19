@@ -25,10 +25,24 @@ Dopo che sono stati inseriti i 5 numeri,
 
  //stampo array numeri casuali e faccio partire l'alert
  console.log(listCasualNum);
- alert("Memorizza questi numeri, hai solo 30 secondi!:", listCasualNum)
+ alert("Memorizza questi numeri, hai solo 30 secondi!:", listCasualNum);
+
+ //creo timer
+
+ setTimeout(function(){
+
+    //ciclo for/prompt per chiedere i  5 numeri all'utente
+    for (let i = 0; i < listCasualNum.length; i++) {
+        numPrompt = prompt("inserisci i numeri visualizzati");
+        console.log(numPrompt)
+        
+    }
 
 
- 
+ }, 30000)
+
+
+
 
  //creo funzione randomnumber
  function generateRandomNumber(min, max) {
