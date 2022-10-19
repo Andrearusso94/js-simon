@@ -35,11 +35,16 @@ Dopo che sono stati inseriti i 5 numeri,
     for (let i = 0; i < listCasualNum.length; i++) {
         numPrompt = prompt("inserisci i numeri visualizzati");
         console.log(numPrompt)
+        if (listCasualNum == numPrompt) {
+        listNum.push(numPrompt)
         
     }
+    }
 
+    alert("hai indovinato" + listNum.length + "numeri. I numeri indovinati sono:" + listNum)
+    console.log(listNum)
 
- }, 30000)
+ }, 10000)
 
 
 
