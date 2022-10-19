@@ -45,7 +45,7 @@ setTimeout(function () {
     alert("hai indovinato" + listNum.length + "numeri. I numeri indovinati sono:" + listNum)
     console.log(listNum)
 
-}, 10000)
+}, 30000)
 
 
 //creo funzione randomnumber
