@@ -13,8 +13,14 @@ Dopo che sono stati inseriti i 5 numeri,
  let numPrompt;
 
  //genero numeri casuali con ciclo for
+ for (let i = 0; i < 5; i++) {
+     casualNum = generateRandomNumber(1, 100)
+     console.log(casualNum);
+    listCasualNum.push(casualNum)
+    document.querySelector('.num').innerText = listCasualNum
+ }
 
  //creo funzione randomnumber
- function genNumeriCasuali(min, max) {
+ function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
