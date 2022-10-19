@@ -12,13 +12,23 @@ Dopo che sono stati inseriti i 5 numeri,
  let casualNum;
  let numPrompt;
 
+ //Visualizzare in pagina 5 numeri casuali.
+
+
  //genero numeri casuali con ciclo for
  for (let i = 0; i < 5; i++) {
      casualNum = generateRandomNumber(1, 100)
-     console.log(casualNum);
+     
     listCasualNum.push(casualNum)
     document.querySelector('.num').innerText = listCasualNum
  }
+
+ //stampo array numeri casuali e faccio partire l'alert
+ console.log(listCasualNum);
+ alert("Memorizza questi numeri, hai solo 30 secondi!:", listCasualNum)
+
+
+ 
 
  //creo funzione randomnumber
  function generateRandomNumber(min, max) {
