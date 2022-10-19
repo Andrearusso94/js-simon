@@ -4,3 +4,17 @@ Dopo 30 secondi i numeri scompaiono e l'utente deve inserire, uno alla volta,
 i numeri che ha visto precedentemente, tramite il prompt(). 
 Dopo che sono stati inseriti i 5 numeri,
  il software dice quanti e quali dei numeri da indovinare sono stati individuati.*/
+
+ //creo variabili / array
+
+ const listCasualNum =[];
+ const listNum = [];
+ let casualNum;
+ let numPrompt;
+
+ //genero numeri casuali con ciclo for
+
+ //creo funzione randomnumber
+ function genNumeriCasuali(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
